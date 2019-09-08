@@ -5,7 +5,7 @@ OP: [JoeGandy](https://github.com/JoeGandy/ShareX-Custom-Upload/); Great stuff!
 
 #### RMSFT Edits:
 
-* [Changes](changes.md)
+* [Changes](change.md)
 * [TODOs](todo.md)
 
 # Setup
