@@ -6,7 +6,7 @@ OP: [JoeGandy](https://github.com/JoeGandy/ShareX-Custom-Upload/); Great stuff!
 #### RMSFT Edits:
 
 * [Changes](CHANGE.MD)
-* [TODOs](todo.md)
+* [TODOs](TODO.md)
 
 # Setup
 First we start by uploading the contents of the 'src' directory to the root of our website
