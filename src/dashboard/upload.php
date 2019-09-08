@@ -22,18 +22,18 @@ if (isset($_POST['key'])) {
             $first_run = false;
 
             if ($config['enable_random_name']) {
-                $target = dirname(getcwd()).'../'.generateRandomName(end($parts), $config['random_name_length']);
+                $target = dirname(getcwd()).'/'.generateRandomName(end($parts), $config['random_name_length']);
             } else {
                 if($files_exist_counter++ < 1){
-                    $target = dirname(getcwd()).'../'.$_POST['name'].'.'.end($parts);
+                    $target = dirname(getcwd()).'/'.$_POST['name'].'.'.end($parts);
                 }else{
-                    $target = dirname(getcwd()).'../'.$_POST['name'].'_'.$files_exist_counter.'.'.end($parts);
+                    $target = dirname(getcwd()).'/'.$_POST['name'].'_'.$files_exist_counter.'.'.end($parts);
                 }
             }
         }
 
         if (move_uploaded_file($_FILES['d']['tmp_name'], $target)) {
-            $target_parts = explode('../', $target);
+            $target_parts = explode('/', $target);
             echo $uploadhost.end($target_parts);
         } else {
             echo 'File upload failed, ensure permissions are writeable on the directory (777), see full config: https://github.com/JoeGandy/ShareX-Custom-Upload/blob/master/README.md#automatic-setup';
