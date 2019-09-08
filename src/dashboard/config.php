@@ -2,7 +2,7 @@
 
 return [
     /* This is a secure key that only you should know, an added layer of security for the image upload */
-    'secure_key' => '32bitkeyencryptionforthelolz420x',
+    'secure_key' => '256bitkeyencryptionforthelolz420',
 
     /* This is the url your output will be, usually http://www.domain.com/u/, also going to this url will be the gallery page */
     'output_url' => 'http://example.com/',
