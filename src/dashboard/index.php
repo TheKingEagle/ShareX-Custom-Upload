@@ -20,6 +20,7 @@
 	<head>
 		<meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0">
 		<link rel="stylesheet" href="//stackpath.bootstrapcdn.com/bootstrap/4.1.2/css/bootstrap.min.css" integrity="sha384-Smlep5jCw/wG7hdkwQ/Z5nLIefveQRIY9nfy6xoR1uRYBtpZgI6339F5dgvm/e9B" crossorigin="anonymous">
+		<link rel="stylesheet" href="https://bootswatch.com/4/cyborg/bootstrap.min.css"/>
 		<link href="//cdn.datatables.net/1.10.19/css/dataTables.bootstrap4.min.css" rel="stylesheet" type="text/css"/>
 		<title><?php echo $config['page_title']; ?></title>
 	</head>
@@ -64,7 +65,7 @@
 					<?php
                     foreach($files1 as $key => $file){
 					$absfile = dirname(dirname(__FILE__)).'/'.$file;
-                    if(is_dir(dirname(dirname(__FILE__)).'/'.$file) || 'php' === pathinfo($file, PATHINFO_EXTENSION)){
+                    if(is_dir($absfile) || 'php' === pathinfo($file, PATHINFO_EXTENSION)){
                     unset($files1[$key]);
                     } else {?>
 						<tr>
